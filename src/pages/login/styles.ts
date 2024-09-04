@@ -8,6 +8,7 @@ export const style = StyleSheet.create({
     justifyContent: "center",
     backgroundColor: themes.colors.lightGreen,
     width: "100%",
+    paddingHorizontal: 12,
   },
   topContent: {
     height: "33%",
@@ -37,7 +38,6 @@ export const style = StyleSheet.create({
   midContent: {
     height: "33%",
     width: "100%",
-    paddingHorizontal: 12,
     gap: 20,
   },
   data: {
@@ -48,16 +48,31 @@ export const style = StyleSheet.create({
     fontFamily: themes.fonts.text,
     color: themes.colors.white,
   },
-  input: {
-    padding: 12,
+  boxInput: {
     backgroundColor: themes.colors.white,
     borderRadius: 12,
-    borderColor: themes.colors.black,
+    borderWidth: 2,
+    borderColor: themes.colors.darkGreen,
+    flexDirection: "row",
+    paddingHorizontal: 20,
+    alignItems: "center",
+  },
+  icon: {
+    fontSize: 20,
+    color: themes.colors.darkGreen,
+  },
+  input: {
+    height: "100%",
+    width: "90%",
+    padding: 12,
     fontSize: 16,
     fontFamily: themes.fonts.text,
   },
+  lostPasswordContainer: {
+    alignSelf: "flex-end",
+    paddingTop: 8,
+  },
   lostPassword: {
-    textAlign: "right",
     fontFamily: themes.fonts.text,
     fontSize: 12,
     color: themes.colors.white,
@@ -66,5 +81,43 @@ export const style = StyleSheet.create({
   botContent: {
     height: "33%",
     width: "100%",
+    alignItems: "center",
+    gap: 12,
+  },
+  loginBtn: {
+    width: "100%",
+    padding: 20,
+    backgroundColor: themes.colors.darkGreen,
+    borderRadius: 8,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  signupContent: {
+    gap: 4,
+    width: "100%",
+    alignItems: "center",
+  },
+  signupBtn: {
+    width: "100%",
+    padding: 20,
+    backgroundColor: themes.colors.red,
+    borderRadius: 8,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  btnText: {
+    fontSize: 16,
+    fontFamily: themes.fonts.text,
+    color: themes.colors.white,
+  },
+  infoText: {
+    fontSize: 16,
+    fontFamily: themes.fonts.text,
+    color: themes.colors.gray,
+  },
+  signupText: {
+    fontSize: 12,
+    fontFamily: themes.fonts.text,
+    color: themes.colors.white,
   },
 });

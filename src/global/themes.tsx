@@ -8,6 +8,7 @@ export const themes = {
     background: "#F0F0F0",
     white: "#fff",
     black: "#000",
+    gray: "#BABABA",
   },
 
   fonts: {
