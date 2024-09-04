@@ -8,7 +8,6 @@ import {
   Montserrat_700Bold,
   Montserrat_400Regular,
 } from "@expo-google-fonts/montserrat";
-import AppLoading from "expo-app-loading";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -17,7 +16,7 @@ export default function App() {
   });
 
   if (!fontsLoaded) {
-    <AppLoading />;
+    return null;
   }
 
   return (

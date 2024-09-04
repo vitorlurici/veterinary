@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Text, View, Image } from "react-native";
+import { Text, View, Image, TextInput } from "react-native";
 
 import { style } from "./styles";
 
@@ -16,7 +16,17 @@ export default function Login() {
           <Text style={style.bigText}>LINK</Text>
         </View>
       </View>
-      <View style={style.midContent}></View>
+      <View style={style.midContent}>
+        <View style={style.data}>
+          <Text style={style.label}>EMAIL</Text>
+          <TextInput style={style.input} placeholder="nome@exemplo.com.br" />
+        </View>
+        <View style={style.data}>
+          <Text style={style.label}>SENHA</Text>
+          <TextInput style={style.input} placeholder="Senha" />
+          <Text style={style.lostPassword}>Esqueci minha senha</Text>
+        </View>
+      </View>
       <View style={style.botContent}></View>
     </View>
   );
